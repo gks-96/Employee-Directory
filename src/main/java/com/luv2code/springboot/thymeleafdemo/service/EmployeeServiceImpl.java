@@ -11,9 +11,7 @@ import com.luv2code.springboot.thymeleafdemo.entity.Employee;
 @Service 
 public class EmployeeServiceImpl implements EmployeeService {
 
-// what is the need of the service ? 
-	// all it does is delegates the calls to the DAO 
-	
+
 	private EmployeeRepository employeeRepository;
 	
 	@Autowired    // writing bean id ; 
@@ -23,7 +21,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	
 	@Override
 	public List<Employee> findAll() {
-		// TODO Auto-generated method stub
+		
 		return employeeRepository.findAll();
 	}
 
